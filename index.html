@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" onclick="closeMenu()">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baigiamasis darbas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="navbar">
+            <div class="container_h nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+
+                <div class="menu-items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+
+        <!-- alt + shift + a -->
+        <div class="tasks1">
+            <div class="content0">
+                <h1>BAIGIAMASIS FRONT-END DARBAS</h1>
+                <h1>UŽDUOTYS:</h1>
+
+                <div>
+                    <p>
+                        1. Paspaudus ant mygtuko, puslapyje esantis div atsiranda/pranyksta. <br>
+                        2. Turit vieną div, su aukščiu,pločiu ir spalva bei 4 mygtukus, su kuriais galit valdyt sukurto
+                        div savybes: plotis, aukstis, centravimas ir pozicija. <br>
+                        3. Burgeris ir šoninis Meniu - paspaudus ant burgerio gražiai išvažiuoja šoninis meniu. <br>
+                        4. Bent 4 div elementai, pradžioje visi juodos spalvos, paspaudus bent ant vieno iš jų, yra
+                        pakeičiamos spalvos visiems. Spalvos generuojamos random. <br>
+                        5. Formoje pildoma "vardas", "pavardė" ir "gimimo data". Duomneys kaupiami lentelėje.
+                        Stulpeliai: Eil. Nr., Vardas, Pavardė, Amžius. <br>
+
+                        Visos užduotys turi būti stilizuotos, kad nebūtų sumaišytos. Kiekviena turi turėti savo section,
+                        headingus ir pan.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="on_of">
+            <div class="content1">
+                <div>
+                    <h1>1. On / off</h1>
+                </div>
+                <div><button id="on-off">ON / OFF</button></div>
+            </div>
+            <div class="square1"></div>
+            
+        </div>
+
+        <div class="control_p">
+            <div class="content2">
+                <div>
+                    <h1>2. Control panel</h1>
+                </div>
+                <div class="buttons_list">
+                    <div class="buttons1">
+                        <button id="width" onclick="changeWidth()">Width</button>
+                        <button id="height_bt" onclick="changeHeight()">Height</button>
+                    </div>
+                    <div class="buttons2">
+                        <button id="center" onclick="centerPos()">Center</button>
+                        <button id="possition" onclick="rightPos()">Possition</button>
+                    </div>
+                </div>
+                <div class="reset_div">
+                    <button id="reset" onclick="resetPos()">Reset</button>
+                </div>
+            </div>
+
+            <div class="square2"></div>
+            
+        </div>
+
+        <div class="colors">
+            <h1>4. Colors</h1>
+            <div class="all_squares">
+                <div class="color_sq" ondblclick="randomColor()">
+                </div>
+                <div class="color_sq" ondblclick="randomColor()">
+                </div>
+                <div class="color_sq" ondblclick="randomColor()">
+                </div>
+                <div class="color_sq" ondblclick="randomColor()">
+                </div>
+                <div class="color_sq" ondblclick="randomColor()">
+                </div>
+                <div class="color_sq" ondblclick="randomColor()">
+                </div>
+            </div>
+            <p>Generation of colors with double click!</p>
+        </div>
+
+        <div class="form_inp">
+            <h1>5. Input form</h1>
+
+            <form>
+                <div class="cont1">
+                    <div class="labels">
+                        <label for="name">Name:</label>
+                        <label for="surname">Surname:</label>
+                        <label for="yearOfBirth">Birth year:</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" id="name" placeholder="Your name">
+                        <input type="text" id="surname" placeholder="Your surname">
+                        <input type="text" id="yearOfBirth" placeholder="Your year of birth">
+                    </div>
+                </div>
+            </form>
+
+            <div class="buttons">
+                <!-- <button id="submit" onclick="add();" value="Add">Submit</button> -->
+                <!-- <input type="button" onclick="add();" value="Add"> -->
+                <button onclick="add()">Add</button>
+                <button onclick="removeRow()">Remove</button>
+                <button onclick="resetTable()">Reset</button>
+            </div>
+
+            <div class="table1">
+                <table id="userTable">
+                    <thead>
+                        <!-- statiniai duomenys-->
+                        <th>Pos.</th>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Age</th>
+                    </thead> <!-- dinaminiai duomenys-->
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="custom.js"></script>
+</body>
+
+</html>

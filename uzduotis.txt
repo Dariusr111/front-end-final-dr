@@ -1,0 +1,8 @@
+UŽDUOTIS
+1. Paspaudus ant mygtuko, puslapyje esantis div atsiranda/pranyksta
+2. Turit vieną div, su aukščiu,pločiu ir spalva bei 4 mygtukus, su kuriais galit valdyt sukurto div savybes: plotis, aukstis, centravimas ir pozicija
+3. Burgeris ir šoninis Meniu - paspaudus ant burgerio gražiai išvažiuoja šoninis meniu.
+4. Bent 4 div elementai, pradžioje visi juodos spalvos, paspaudus bent ant vieno iš jų, yra pakeičiamos spalvos visiems. Spalvos generuojamos random.
+5. Formoje pildoma "vardas", "pavardė" ir "gimimo data". Duomneys kaupiami lentelėje. Stulpeliai: Eil. Nr., Vardas, Pavardė, Amžius.
+
+Visos užduotys turi būti stilizuotos, kad nebūtų sumaišytos. Kiekviena turi turėti savo section, headingus ir pan.
